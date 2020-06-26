@@ -1,0 +1,45 @@
+ion-content {
+    text-align: center;
+    --background: #F5F5F5;
+}
+
+ion-select {
+    width: 100%;
+    text-align: center;
+    background-color: #10194e;
+    color: white;
+    margin-right: 2vh;
+}
+
+h1 {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+ion-icon {
+    color: gray;
+    margin-left: 1vh;
+    margin-right: 0.5vh;
+    position: relative;
+    margin-top: 1vh;
+    font-size: 3vh;
+}
+
+.search {
+    display: flex;
+    margin-top: 1vh;
+    width: 100%;
+}
+
+ion-input {
+    --background: gray;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: 2vh;
+}

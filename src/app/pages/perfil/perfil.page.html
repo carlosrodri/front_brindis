@@ -1,0 +1,27 @@
+    <ion-content>
+        <ion-icon id="logOut" (click)="logOut()" name="log-out"></ion-icon>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+        <img src="{{perfil}}" style="width : 100px ; height : 100px" (click)="myPhoto()">
+        <h1 id="name">{{name}}</h1>
+        <h1 id="nickname">{{nickname}}</h1>
+        <div class="center">
+            <div class="cityBanner">
+                <ion-icon name="location" id="city"></ion-icon>
+                <p id="city">{{myCity}}</p>
+            </div>
+        </div>
+        <div class="center">
+            <label id="shop">
+                <p (click)="bar()" id="link" slot="start">Registrar bar</p>
+                <p (click)="myBar()" id="myBar">Mi Bar</p>
+            </label>
+        </div>
+        <div class="city">
+            <h3>Selecciona tu ciudad de rumba</h3>
+            <ion-searchbar animated="true" [animated]='true' placeholder="Ciudad" [(ngModel)]="city"></ion-searchbar>
+            <ion-list>
+                <ion-item *ngFor="let site of sitesList" (click)="select(site)">{{site}}
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>

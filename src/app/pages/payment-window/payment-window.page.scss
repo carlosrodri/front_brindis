@@ -1,0 +1,70 @@
+ion-content {
+    --background: white;
+    text-align: center;
+}
+
+ion-item {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    border-radius: 50px;
+    color: gray;
+    font-weight: bolder;
+    --background: white;
+}
+
+ion-input {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+
+.codes {
+    display: flex;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+}
+
+.n {
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+}
+
+ion-button {
+    --background: #FF4463;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 4vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    --border-radius: 30px;
+    height: 6vh;
+}
+
+.personal {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.per {
+    margin-top: 0.5vh;
+}
+
+.card {
+    margin-bottom: 0.5vh;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 3vh;
+    margin-top: 5vh;
+}
+img{
+    margin-top: 3vh;
+    height: 30%;
+}
+app-back-button{
+    position: absolute;
+    left: 1vh;
+}

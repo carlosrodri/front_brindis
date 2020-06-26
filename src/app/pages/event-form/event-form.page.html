@@ -1,0 +1,42 @@
+
+<ion-content>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <app-back-button color={{color}} rout={{rout}}></app-back-button>
+  <h1 class="animated single bounceInRight delay-0.5s">Nuevo Evento</h1>
+  <ion-item color="primary-accent">
+    <ion-label position="floating" class="login">Nombre del Evento</ion-label>
+    <ion-input type="text" clear-input="true" class="login" id="red" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item color="primary-accent">
+    <ion-label position="floating" class="login">Descripción del evento</ion-label>
+    <ion-textarea type="text" clear-input="true" class="login" id="red" [(ngModel)]="description"></ion-textarea>
+  </ion-item>
+  <ion-item color="primary-accent">
+    <ion-label position="floating" class="login">Cover</ion-label>
+    <ion-input type="text" clear-input="true" class="login" id="red" [(ngModel)]="cover" maxlength=200></ion-input>
+  </ion-item>
+  <ion-item id="suggested">
+    <ion-label>Recomendar este evento</ion-label>
+    <ion-toggle  [(ngModel)]="suggested"></ion-toggle>
+  </ion-item>
+  <ion-item color="primary-accent">
+    <ion-icon name="camera" slot="start" (click)="selectImage()"></ion-icon>
+    <img src="{{photo}}" id="camera" alt="" srcset="">
+    <ion-label>Imagen</ion-label>
+  </ion-item>
+  <ion-item color="primary-accent">
+    <ion-icon name="calendar" slot="start"></ion-icon>
+    <ion-datetime displayFormat="DD MMM YYYY" placeholder="Fecha del evento" [(ngModel)]="date"
+      monthShortNames="Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic" cancelText="Cancelar"
+      doneText="Hecho" display-format="DD MMM YYYY"></ion-datetime>
+  </ion-item>
+  <ion-item color="primary-accent">
+    <ion-icon name="time" slot="start"></ion-icon>
+    <ion-datetime displayFormat="hh:mm a" [(ngModel)]="hour" placeholder="Hora del evento" cancelText="Cancelar"
+      doneText="Hecho"></ion-datetime>
+  </ion-item>
+
+  <ion-button id="logginButton" expand="block" shape="round" class="animated single tada delay-1s" color="secondary" expand="block" (click)="newEvent()" shape="round">Crear Evento</ion-button>
+
+</ion-content>

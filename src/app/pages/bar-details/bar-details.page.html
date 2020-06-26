@@ -1,0 +1,123 @@
+<ion-content>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <app-back-button rout={{rout}}></app-back-button>
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Actualizar estados" refreshingSpinner="crescent"
+      refreshingText="Refrescando...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <img src="{{shop?.imageUrl}}">
+
+  <h1 id="name">{{shop?.name}}</h1>
+
+  <div class="info">
+    <div class="hour">
+      <ion-icon name="time" id="hour"></ion-icon>
+      <p id="officeHour">{{getWorkingHours(shop?.officeHours)}}</p>
+    </div>
+    <div class="home">
+      <ion-icon name="home" id="date"></ion-icon>
+      <p id="officeHour">{{shop?.city}}</p>
+    </div>
+
+    <div class="hour">
+      <ion-icon name="time" id="hour"></ion-icon>
+      <p id="officeHour">{{'Hora de apertura ' + toHour(shop?.openHour)}}</p>
+    </div>
+
+    <div class="hour">
+      <ion-icon name="time" id="hour"></ion-icon>
+      <p id="officeHour">{{'Hora de cierre '+toHour(shop?.closeHour)}}</p>
+    </div>
+
+    <div class="hour">
+      <ion-icon name="call" id="hour"></ion-icon>
+      <p id="officeHour">{{shop?.phone}}</p>
+    </div>
+    
+  </div>
+
+  <div class="description">
+    <p>{{shop?.description}}</p>
+  </div>
+
+  <div class="bar">
+    <p>{{shop?.barKind}}</p>
+  </div>
+  
+  <div class="like">
+    <button id="likes" (click)="addLike()">Me gusta</button>
+    <p id="like">{{likes}}</p>
+  </div>
+
+  <div class="openHour">
+    <p id="open">{{open(shop?.openHour, shop?.closeHour, shop?.officeHours)}}</p>
+  </div>
+
+  <h3>{{qualification}}</h3>
+
+  <h3 id="calification">Califica este Bar</h3>
+  <div class="calification">
+    <h3>{{average}}</h3>
+    <form>
+      <p class="clasificacion">
+        <input type="radio" name="estrellas" value="5">
+        <!--
+      --><label id="radio1" for="radio1" (click)="five()">★</label>
+        <!--
+      --><input type="radio" name="estrellas" value="4">
+        <!--
+      --><label id="radio2" for="radio2" (click)="four()">★</label>
+        <!--
+      --><input type="radio" name="estrellas" value="3">
+        <!--
+      --><label id="radio3" for="radio3" (click)="three()">★</label>
+        <!--
+      --><input type="radio" name="estrellas" value="2">
+        <!--
+      --><label id="radio4" for="radio4" (click)="two()">★</label>
+        <!--
+      --><input type="radio" name="estrellas" value="1">
+        <!--
+      --><label id="radio5" for="radio5" (click)="one()">★</label>
+      </p>
+    </form>
+  </div>
+
+  <ion-list>
+
+    <div class="state">
+      <p class="comment">Estados</p>
+      <h3 id="d" (click)="presentComments()">Comentarios</h3>
+    </div>
+    <p class="comment">{{commentMessage}}</p>
+
+    <app-status *ngFor="let status of statusList" usermail={{status.userMail}} img={{status.avatarImg}}
+      comment={{status.description}} nickname={{status.nickname}} hour={{status.date}} statusImg={{status.statusImg}}
+      statusId={{status._id}} likeList={{status.likeList}} dontLikeList={{status.dontLikeList}}
+      token={{status.userToken}}>
+    </app-status>
+    <!---<p>{{commentMessage}}</p>
+
+<app-comment *ngFor="let comment of commentList" usermail={{comment.userMail}}
+comment={{comment.description}} nickname={{comment.nickname}}></app-comment>
+
+<div class="commentClass">
+  <ion-label>
+    <ion-textarea type="text" placeholder="Agrega tu comentario..." maxlength=500 color="primary" [(ngModel)]="comment"></ion-textarea>
+    <ion-button slot="end" size="small" (click)="addComment()">Aceptar</ion-button>
+  </ion-label>
+</div>-->
+  </ion-list>
+
+  <ion-button shape="round" (click)="getStatus()" id="refresh">Actualizar</ion-button>
+
+  <footer slot="fixed" class="commentClass" id="footer">
+    <img src="{{photoImg}}" id="photo" slot="start" (click)="selectImage()">
+    <ion-textarea type="text" placeholder="Agrega un estado..." maxlength=500 id="status" [(ngModel)]="description">
+    </ion-textarea>
+    <ion-icon id="camera" class="send" name="send" (click)="addStatus()">Aceptar</ion-icon>
+  </footer>
+</ion-content>

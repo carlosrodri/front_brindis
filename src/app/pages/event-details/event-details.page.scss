@@ -1,0 +1,190 @@
+ion-header {
+    display: flex;
+    --background: #black;
+    background: #FF4463;
+}
+
+ion-item {
+    --background: black;
+    display: flex;
+    margin-right: 3vh;
+}
+
+ion-icon {
+    margin-right: 2vh;
+    color: white;
+}
+
+ion-content {
+    --background: white;
+    text-align: center;
+
+}
+
+#title {
+    color: black;
+    font-weight: bold;
+}
+
+#assit {
+    background: white;
+    border-color: black;
+    color: black;
+    margin-bottom: 0px;
+    padding: 0px;
+    width: 60%;
+    border: groove;
+    height: 4vh;
+}
+
+#interest {
+    margin-top: 2vh;
+}
+
+#date {
+    //color: #1E9473;
+    color: gray;
+    position: relative;
+    font-size: 15px;
+    line-height: 1vh;
+}
+
+#hour {
+    //color: #EB5055;
+    font-size: 15px;
+    text-align: justify;
+    position: relative;
+    color: gray;
+    line-height: 1vh;
+}
+
+#name {
+    font-family: 'Permanent Marker', serif;
+    font-weight: bolder;
+    color: white;
+    align-content: center;
+    text-align: center;
+    margin-left: 2vh;
+    margin-right: 1vh;
+}
+
+.bar {
+    font-weight: bolder;
+    text-align: justify;
+    color: gray;
+}
+
+.description {
+    margin-top: 1vh;
+    margin-right: 2vh;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.headers {
+    margin-left: 2vh;
+    color: black;
+}
+
+.dates {
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+
+.buttons {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    display: flex;
+}
+
+ion-icon {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 30px;
+}
+
+.attends {
+    color: black;
+    margin-left: 2vh;
+    width: 50%;
+    text-align: center;
+    margin-right: 3vh;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.interested {
+    color: black;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+img {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+}
+
+.cover {
+    text-align: justify;
+}
+
+#cover {
+    color: #FF4463;
+}
+
+#shop {
+    width: 90%;
+    font-weight: bolder;
+    text-align: justify;
+    color: black;
+    margin-left: 2vh;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#icon {
+    margin-left: 2vh;
+    font-size: 20px;
+}
+
+ion-icon {
+    color: gray;
+}
+
+.hour {
+    display: flex;
+}
+
+.date {
+    display: flex;
+}
+
+app-back-button {
+    position: absolute;
+    left: 1vh;
+    margin-top: 5vh;
+}
+
+.footer {
+    display: flex;
+}
+
+#add {
+    font-size: 2vh;
+    color: black;
+}
+
+button {
+    background: white;
+    border-radius: 20px;
+    border-color: black;
+}
+
+ion-button{
+    --background: #FF4463;
+    color: white;
+}

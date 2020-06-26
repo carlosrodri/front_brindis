@@ -1,0 +1,115 @@
+ion-content {
+    height: 100%;
+    --background: white;
+    text-align: center;
+}
+
+ion-button {
+    color: #FF4463;
+    --background: white;
+}
+
+img {
+    margin-top: 10vh;
+}
+
+#shop {
+    margin-top: 5vh;
+    display: flex;
+}
+
+#logOut {
+    top: 10vh;
+    position: absolute;
+    right: 2vh;
+    color: black;
+    font-size: 4vh;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: #727273;
+    font-size: 12px;
+}
+
+#nickname {
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    line-height: 2px;
+    font-size: 24px;
+}
+
+#name {
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 1vh;
+}
+
+label {
+    padding: 5%;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+ion-searchbar {
+    margin-top: 1vh;
+    --background: #FF4463;
+    color: white;
+    font-weight: bolder;
+}
+
+h3 {
+    color: black;
+    font-weight: bolder;
+    text-align: justify;
+    margin-left: 2vh;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    margin-top: 10vh;
+}
+
+app-back-button {
+    top: 10vh;
+    position: absolute;
+    left: 1vh;
+}
+
+#city {
+    color: #727273;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#link{
+    border-right: solid;
+    border-color: gray;
+}
+
+p {
+    margin-left: 1vh;
+    color: black;
+    font-weight: bolder;
+}
+
+.cityBanner {
+    display: flex;
+    margin-top: 1vh;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.center{
+    display: table;
+    margin: 0 auto;
+}

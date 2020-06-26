@@ -1,0 +1,38 @@
+<ion-content>
+  <app-back-button rout={{rout}} color={{color}}></app-back-button>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <h1>Suscripción a brindis manager para dueños de bares</h1>
+  <img src="/assets/undraw_stripe_payments_o7aw.svg" alt="" srcset="">
+  <div class="personal">
+    <ion-item class="per">
+      <ion-input placeholder="Nombre" type="text" clear-input="true" id="red" [(ngModel)]="name"></ion-input>
+    </ion-item>
+    <ion-item class="per">
+      <ion-input placeholder="Correo electrónico" type="text" clear-input="true" id="red" [(ngModel)]="mail">
+      </ion-input>
+    </ion-item>
+    <ion-item class="per">
+      <ion-input placeholder="Teléfono" type="number" clear-input="true" id="red" [(ngModel)]="phone"></ion-input>
+    </ion-item>
+  </div>
+  <ion-item class="card">
+    <ion-input placeholder="Número de tarjeta" type="number" clear-input="true" id="red" [(ngModel)]="number">
+    </ion-input>
+  </ion-item>
+  <div class="codes">
+    <ion-item class="n">
+      <ion-input placeholder="Mes" type="number" maxlength="2" clear-input="true" class="login" id="red" [(ngModel)]="expMonth">
+      </ion-input>
+    </ion-item>
+    <ion-item class="n">
+      <ion-input placeholder="Año" type="number" maxlength="2" clear-input="true" class="login" id="red" [(ngModel)]="expYear">
+      </ion-input>
+    </ion-item>
+    <ion-item class="n">
+      <ion-input placeholder="CVC" type="number" maxlength="3" clear-input="true" class="login" id="red" [(ngModel)]="cvc">
+      </ion-input>
+    </ion-item>
+  </div>
+
+  <ion-button expand="block" (click)="payment()">Pagar $40.000</ion-button>
+</ion-content>

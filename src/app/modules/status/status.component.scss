@@ -1,0 +1,90 @@
+p {
+    color: white;
+    margin-bottom: 1vh;
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 6vh;
+    margin-right: 2vh;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: justify;
+    line-height: 1px;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 90%;
+    color: white;
+}
+
+.container {
+    border-radius: 15px;
+    margin-right: 2vh;
+    margin-left: 1vh;
+}
+
+#hour {
+    text-align: justify;
+    color: gray;
+    font-size: 12px;
+    line-height: 1px;
+    margin-left: 6vh;
+    margin-right: 2vh;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+}
+
+#miniImg {
+    width: 10%;
+    height: 30px;
+    width: 30px;
+    margin-right: 2vh;
+    border-radius: 50%;
+    position: relative;
+}
+
+#img {
+    margin-top: 1vh;
+    width: 80%;
+    border-radius: 10px;
+}
+
+label {
+    margin-left: 2vh;
+}
+#footer{
+    display: flex;
+    border-bottom: groove;
+    border-width: 1px;
+    border-color: white;
+    margin-left: 6vh;
+}
+.like{
+    margin-right: 2vh;
+    display: flex;
+}
+.dontLike{
+    display: flex;
+}
+ion-icon{
+    size: 4vh;
+    font-size: 4vh;
+    color: white;
+    margin-right: 1vh;
+}
+ion-label{
+    margin-top: 1vh;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+ion-button{
+    border-radius: 20px;
+    --background: #FF4463;
+    color: white;
+    border: none;
+    margin-left: 2vh;
+}

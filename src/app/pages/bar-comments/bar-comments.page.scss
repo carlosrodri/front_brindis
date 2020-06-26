@@ -1,0 +1,49 @@
+h1{
+    margin-left: 3vh;
+    color: white;
+}
+ion-header{
+    display: flex;
+    background: #323232;
+}
+ion-content{
+    --background: #323232;
+}
+.commentClass {
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
+ion-List {
+    padding-top: 2vh;
+    padding-left: 1vh;
+    background: #323232;
+
+}
+ion-label {
+    display: flex;
+}
+
+h1{
+    font-size: 15px;
+    color: white;
+}
+p{
+    margin-left: 2vh;
+    color: white;
+}
+ion-label{
+    background: #323232;
+}
+ion-textarea{
+    background: white;
+    border-radius: 15px;
+    color:black;
+}
+ion-button{
+    margin-top: 3vh;
+    margin-left: 1vh;
+    color: black;
+    font-weight: bolder;
+    --background: white;
+}

@@ -1,0 +1,27 @@
+<ion-content>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
+  <app-back-button rout={{rout}}></app-back-button>
+  <h1>Pago y Registro</h1>
+
+  <img src="/assets/undraw_credit_card_payment_yb88.svg" alt="" srcset="">
+
+  <div class="code">
+    <p>¿Tienes un código de promoción?</p>
+    <div class="input">
+      <ion-input placeholder="Código..." type="text" [(ngModel)]="code"></ion-input>
+      <ion-button size="small" (click)="verifyCode()">Aceptar</ion-button>
+    </div>
+  </div>
+
+  <div class="payment">
+    <p>Si no tienes un código, suscríbete para resgistrar tu bar</p>
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3"></script>
+
+    <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+    <ion-button expand="block" (click)="payment()">Suscribirme</ion-button>
+    <div id="error-message"></div>
+
+  </div>
+</ion-content>

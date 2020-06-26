@@ -1,0 +1,65 @@
+#name{
+    font-weight: bolder;
+    color: black;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+}
+label {
+    color: orange;
+    font-size: 20px;
+}
+ion-card{
+    border-radius: 10px;
+}
+.puntuation{
+    line-height: 5px;
+    display: flex;
+}
+ion-card-content {
+    display: flex;
+    background-color: white;
+}
+ion-item{
+    display: flex;
+    color: white;
+    --background: white;
+}
+#hour{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #F54B15;
+}
+#kind{
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+#direction{
+    text-align: justify;
+    font-size: 15px;
+    color: gray;
+    margin-left: 2px;
+    margin-top: 1vh;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#open{
+    margin-top: 1vh;
+    margin-left: 20%;
+}
+
+#like{
+    margin-top: 1vh;
+    margin-left: 4vh;
+    text-align: center;
+    color: #F54B15;
+}
+
+img{
+    margin-top: 1vh;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 3vh;
+}

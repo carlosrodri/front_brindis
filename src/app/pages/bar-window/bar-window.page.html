@@ -1,0 +1,68 @@
+<ion-content>
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <app-back-button rout="{{rout}}"></app-back-button>
+
+  <img src="{{shop?.imageUrl}}">
+
+  <h1 id="name">{{shop?.name}}</h1>
+
+  <div class="info">
+    <div class="hour">
+      <ion-icon name="time" id="hour"></ion-icon>
+      <p id="officeHour">{{getWorkingHours(shop?.officeHours)}}</p>
+    </div>
+    <div class="home">
+      <ion-icon name="home" id="date"></ion-icon>
+      <p id="officeHour">{{shop?.city}}</p>
+    </div>
+
+    <div class="hour">
+      <ion-icon name="time" id="hour"></ion-icon>
+      <p id="officeHour">{{'Hora de apertura ' + toHour(shop?.openHour)}}</p>
+    </div>
+
+    <div class="hour">
+      <ion-icon name="time" id="hour"></ion-icon>
+      <p id="officeHour">{{'Hora de cierre '+toHour(shop?.closeHour)}}</p>
+    </div>
+
+    <div class="hour">
+      <ion-icon name="call" id="hour"></ion-icon>
+      <p id="officeHour">{{shop?.phone}}</p>
+    </div>
+  </div>
+
+  <div class="description">
+    <p>{{shop?.description}}</p>
+  </div>
+
+  <div class="bar">
+    <p>{{shop?.barKind}}</p>
+  </div>
+
+  <div class="califi">
+    <h3>Calificación</h3>
+    <label>{{qualification}}</label>
+  </div>
+
+  <div class="like">
+    <p id="like">{{likes}}</p>
+  </div>
+
+  <div class="openHour">
+    <p id="open">{{open(shop?.openHour, shop?.closeHour, shop?.officeHours)}}</p>
+  </div>
+
+  <ion-list>
+    <h1 id="events">Tus eventos</h1>
+    <app-cardevent-admin *ngFor="let event of eventList" idEvent={{event._id}} shop={{event.shop}}
+      date={{toDate(event?.date)}} event={{event?.name}} cover={{event?.cover}}>
+    </app-cardevent-admin>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon id="icon" name="add" (click)="newEvent()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

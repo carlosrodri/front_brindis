@@ -1,0 +1,29 @@
+<label class="container">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+  <div class="header">
+    <img id="miniImg" src="{{img}}">
+    <h2>{{nickname}}</h2>
+  </div>
+  <div class="footer">
+    <img id="img" src="{{statusImg}}">
+    <ion-text>
+      <p>{{comment}}</p>
+    </ion-text>
+    <h3 id="hour">{{toHour()}}</h3>
+
+
+    <div id="footer">
+      <div class="like">
+        <ion-icon name="heart-sharp" id="like" (click)="like()"></ion-icon>
+        <ion-label>{{likes}}</ion-label>
+      </div>
+      <div class="dontLike">
+        <ion-icon name="sad-sharp" id="dontLike" (click)="dontLike()"></ion-icon>
+        <ion-label>{{dontLikes}}</ion-label>
+      </div>
+      <div>
+        <ion-button shape="round" size="small" (click)="report()">Reportar</ion-button>
+      </div>
+    </div>
+  </div>
+</label>

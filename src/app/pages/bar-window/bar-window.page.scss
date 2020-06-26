@@ -1,0 +1,268 @@
+ion-content {
+    text-align: center;
+    --background: #323232;
+}
+
+#title {
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    font-weight: bolder;
+    align-content: center;
+    font-size: 30px;
+    margin-left: 2vh;
+    background: #FF4463;
+}
+ion-list{
+    text-align: center;
+    background: #F5F5F5;
+    --background: #F5F5F5;
+}
+ion-header {
+    display: flex;
+    --background: #FF4463;
+    background: #FF4463;
+}
+#fab {
+    position: fixed;
+    --background: #f98c5f;
+}
+
+p {
+    font-size: 17px;
+    color: white;
+}
+#events{
+    color: black;
+}
+h1{
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.description{
+    margin-left: 3vh;
+    margin-right: 3vh;
+    color: black;
+    font-weight: bold;
+    text-align: justify;
+}
+.nick{
+    margin: 3vh;
+}
+ion-icon {
+    color: gray;
+    margin-top: 4px;
+    margin-right: 1vh;
+}
+#camera{
+    margin-left: 1vh;
+    font-size: 30px;
+    margin-top: 2vh;
+}
+#refresh{
+    color: white;
+}
+img {
+    width: 100%;
+}
+
+ion-content {
+    --background: #323232;
+    text-align: center;
+}
+
+.hour {
+    display: flex;
+}
+
+.info {
+    margin-left: 2vh;
+}
+#photo{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    height: 8vh;
+    width: 6vh;
+}
+#officeHour {
+    line-height: 0vh;
+    color: gray;
+    position: relative;
+}
+
+#title {
+    color: white;
+    font-weight: bold;
+    margin-left: 2vh;
+    text-align: justify;
+}
+
+.home {
+    display: flex;
+}
+
+#name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    height: 7%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: white;
+    text-align: justify;
+}
+
+.description {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+}
+
+h2 {
+    margin-left: 3vh;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #FF4463;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+// calification css
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form label {
+    font-size: 40px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: grey;
+    font-size: 30px;
+    margin-left: 1vh;
+    text-align: center;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+#calification {
+    color: #bababa;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bar {
+    color: gray;
+    text-align: justify;
+    margin-left: 2vh;
+}
+
+form {
+    text-align: center;
+}
+
+ion-label {
+    display: flex;
+}
+
+.stateHeader {
+    display: flex;
+}
+
+h3 {
+    color: white;
+    margin-left: 2vh;
+    line-height: 0px;
+}
+
+h3:hover {
+    color: #F27F1B;
+}
+
+#d {
+  position: absolute;
+  font-size: 15px;
+  right: 2vh;
+  margin-bottom: 10vh;
+  color: #FF4463;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+}
+#icon{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+ion-fab-button{
+    --background: #FF4463;
+}
+#fabicons{
+    font-size: 30px;
+}
+app-back-button{
+    position: absolute;
+    left: 1vh;
+    margin-top: 2vh;
+}
+label{
+    color: orange;
+    size: 4vh;
+    font-size: 4vh;
+}
+
+.openHpur {
+    color: #FF4463;
+    text-align: justify;
+    margin-left: 2vh;
+}
+
+.phone{
+    color: gray;
+    margin-left: 2vh;
+    text-align: justify;
+}
+
+.openHour{
+    margin-left: 2vh;
+    font-weight: bolder;
+    color: green;
+}
+#open{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+}
+.califi{
+    display: flex;
+    align-content: center;
+    text-align: center;
+}

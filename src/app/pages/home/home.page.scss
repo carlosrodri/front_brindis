@@ -1,0 +1,34 @@
+ion-header{
+    --ion-background-color: #FF4463;
+}
+ion-toolbar{
+    --ion-background-color:  #FF4463;
+}
+h1{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    font-size: 10vh;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Permanent Marker', serif;
+ }
+ ion-content{
+     --ion-background-color: #FF4463;
+ }
+ .buttons{
+     margin-top: 10%;
+     margin-left: 5vh;
+     margin-right: 5vh;
+ }
+
+ ion-button{
+     --background: white;
+     font-weight: bolder;
+     color: #010a43;
+     --border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+ }
+ #btnLogin{
+     margin-bottom: 10vh;
+ }

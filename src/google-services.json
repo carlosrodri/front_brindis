@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "741122524845",
+    "firebase_url": "https://brindis-io.firebaseio.com",
+    "project_id": "brindis-io",
+    "storage_bucket": "brindis-io.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741122524845:android:3b123515703c6bfc39a824",
+        "android_client_info": {
+          "package_name": "com.brindis.app.c"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741122524845-8a897kbu95j3at4f0dg7alse1oui8qsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ5UWdW3CVUCk6a8JiJ1ghVOhE2ev7wgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741122524845-8a897kbu95j3at4f0dg7alse1oui8qsg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "741122524845-jhp9msvpasn9okggn6odsua3ks7i655s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.brindis.app.c"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<ion-card (click)="details()">
+  <ion-card-content>
+    <img src="{{img}}" alt="">
+    <div class="info">
+      <p id="name">{{name}}</p>
+      <p id="direction">{{city}}</p>
+      <div class="puntuation">
+        <label>★</label>
+        <p id="direction">{{getAverage()}}</p>
+        <p id="open">{{open()}}</p>
+        <p id="like">{{getLikes()}}</p>
+      </div>
+    </div>
+   
+  </ion-card-content>

@@ -1,0 +1,21 @@
+ion-tabs{
+    --background: black;
+}
+ion-tab-bar{
+   --background:white;
+   --color: gray;
+}
+ion-tab-button{
+    --color-selected:#023A40;
+    --ripple-color: #FF4463;
+    font-weight: bolder;
+}
+ion-header{
+    background-color: white;
+}
+ion-button{
+    --border-radius: 100%;
+}
+img{
+    border-radius: 50%;
+}

@@ -1,0 +1,20 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Búsqueda</ion-title>
+  </ion-toolbar>
+  <div>
+    <ion-searchbar inputmode="search" animated placeholder="Busca bares" [(ngModel)]="bar"></ion-searchbar>
+  </div>
+</ion-header>
+
+<ion-content>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <ion-list>
+    <ion-item *ngFor="let shop of shops">{{shop?.name}}</ion-item>
+  </ion-list>
+
+
+  <!--<app-card-bar *ngFor="let shop of barList" barId={{shop._id}} name={{shop.name}} kind={{shop.barKind}}
+    city={{shop.city}}></app-card-bar>-->
+
+</ion-content>

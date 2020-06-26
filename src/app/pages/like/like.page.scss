@@ -1,0 +1,31 @@
+ion-content{
+    --background: white;
+    text-align: center;
+}
+ion-searchbar{
+    --background: #4e4e4e;
+    color: #bababa;
+}
+ion-header{
+    background: white;
+}
+div{
+    margin-top: 2vh;
+    display: flex;
+}
+ion-button{
+    margin-top: 3vh;
+    --background: #4e4e4e;
+    color: #bababa;
+}
+ion-searchbar{
+    border-radius: 15px;
+}
+ion-list{
+    background: white;
+}
+ion-item{
+    font-family: 'Poppins', sans-serif;
+    --background: white;
+    color: black;
+}

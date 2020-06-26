@@ -1,0 +1,122 @@
+ion-content {
+   --ion-background-color: white;
+}
+ion-header{
+   background: #FF4463;
+}
+app-back-button{
+   position: relative;
+   right: 43%;
+   margin-top: 2vh;
+}
+.acontent {
+   background-color: white;
+   padding: 2vh;
+   margin-top: 10%;
+   border-radius: 25px;
+}
+
+.back {
+   margin-top: 5vh;
+   background-color: white;
+}
+
+ion-item {
+   margin-left: 3vh;
+   margin-right: 3vh;
+   margin-bottom: 2vh;
+   border-radius: 25px;
+   color: black;
+}
+
+#working_hours{
+   margin-left: 4vh;
+}
+
+ion-checkbox{
+   --background: gray;
+   --background-checked: #FF4463;
+   --border-color-checked:  #FF4463;
+}
+
+ion-list {
+   background: white;
+   border-radius: 25px;
+}
+
+h1 {
+   color: black;
+   background-color: white;
+   text-align: center;
+   font-weight: bolder;
+   text-align: justify;
+   margin-top: 3vh;
+   margin-left: 5vh;
+   margin-bottom: 1vh;
+   font-family: 'PT Sans', sans-serif;
+}
+
+ion-label {
+   font-family: 'PT Sans', sans-serif;
+}
+
+ion-button {
+   margin-top: 5vh;
+   margin-left: 3vh;
+   margin-right: 3vh;
+   --background: #FF4463;
+   color: white;
+   margin-bottom: 5%;
+   font-family: 'PT Sans', sans-serif;
+   font-weight: bolder;
+}
+
+#check{
+   --background: white;
+}
+
+h2{
+   color: black;
+   margin-left: 4vh;
+   font-family: 'PT Sans', sans-serif;
+}
+
+#city {
+   color: black;
+   --background: white;
+   margin-left: 2vh;
+   margin-right: 2vh;
+   margin-bottom: 0px;
+   border-radius: 0px;
+}
+
+p {
+   color: black;
+   font-family: 'PT Sans', sans-serif;
+   font-weight: bolder;
+   margin-left: 5vh;
+}
+
+ion-searchbar {
+   margin-top: 1vh;
+   --background: #FF4463;
+   color: white;
+   font-weight: bolder;
+   border-radius: 20px;
+}
+
+ion-input {
+   color: #FF4463;
+}
+
+ion-icon {
+   color: #FF4463;
+}
+
+#photo {
+   display: flex;
+}
+
+#camera {
+   display: flex;
+}

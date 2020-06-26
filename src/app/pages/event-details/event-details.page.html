@@ -1,0 +1,36 @@
+<ion-content>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+  <app-back-button rout={{rout}}></app-back-button>
+
+  <img src="{{event?.imageUrl}}">
+
+  <div class="buttons">
+    <p id="shop">{{event?.name}}</p>
+  </div>
+  <div class="dates">
+    <div class="hour">
+      <ion-icon name="calendar-outline" id="icon"></ion-icon>
+      <p id="date">{{toDate(event?.date)}}</p>
+      <p id="hour">{{toHour(event?.initHour)}}</p>
+      <div class="attends">
+        <button shape="round" id="assit" (click)="attendEvent()">Asistiré</button>
+        <p id="attend">{{attend}}</p>
+      </div>
+    </div>
+  </div>
+
+  <p id="shop">{{event?.shop}}</p>
+
+  <div class="description">
+    <p class="headers">{{event?.description}}</p>
+  </div>
+
+  <div class="cover">
+    <p class="headers" id="cover">{{event?.cover}}</p>
+  </div>
+
+  <ion-button expand="block" (click)="report()">Reportar contenido inapropiado</ion-button>
+
+</ion-content>

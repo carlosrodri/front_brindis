@@ -1,0 +1,72 @@
+<ion-header>
+  <app-back-button color={{color}} rout={{perfil}}></app-back-button>
+</ion-header>
+
+<ion-content>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <h1 class="animated single bounceInRight delay-0.5s">Registra tu Bar</h1>
+  <ion-list class="login" id="red">
+    <ion-item color="primary-accent">
+      <ion-label position="floating" class="login">Nombre del Bar</ion-label>
+      <ion-input type="email" clear-input="true" class="login" id="red" [(ngModel)]="names"></ion-input>
+    </ion-item>
+    <ion-item color="primary-accent">
+      <ion-label position="floating" class="login">Nickname</ion-label>
+      <ion-input type="email" clear-input="true" class="login" id="red" [(ngModel)]="nickName"></ion-input>
+    </ion-item>
+    <ion-item class="login" id="red" color="primary-accent" id="camera">
+      <ion-icon name="camera" slot="start" class="login" (click)="selectImage()"></ion-icon>
+      <img src="{{photo}}" id="camera" alt="" srcset="">
+      <ion-label class="login">Selecciona una imagen</ion-label>
+    </ion-item>
+    <ion-item class="login" id="red" color="primary-accent">
+      <ion-label position="floating" class="login" id="red">Tipo de Bar</ion-label>
+      <ion-input type="text" clear-input="true" class="login" id="red" [(ngModel)]="kind"></ion-input>
+    </ion-item>
+    <ion-item class="login" id="red" color="primary-accent">
+      <ion-label position="floating" class="login" id="red">Descripción</ion-label>
+      <ion-textarea type="text" clear-input="true" class="login" id="red" [(ngModel)]="description">
+      </ion-textarea>
+    </ion-item>
+    <ion-list id="working_hours">
+      <h2 >Horario de atención</h2>
+        <ion-item id="check" *ngFor="let entry of form">
+          <ion-label>{{entry.val}}</ion-label>
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    <ion-item class="login" id="red" color="primary-accent">
+      <ion-label position="floating" class="login" id="red">Dirección</ion-label>
+      <ion-textarea type="text" clear-input="true" class="login" id="red" [(ngModel)]="direction"></ion-textarea>
+    </ion-item>
+    <ion-item class="login" id="red" color="primary-accent">
+      <ion-label position="floating" class="login" id="red">Número de contacto</ion-label>
+      <ion-input type="tel" clear-input="true" class="login" id="red" [(ngModel)]="phone"></ion-input>
+    </ion-item>
+
+    <ion-item color="primary-accent">
+      <ion-icon name="time" slot="start"></ion-icon>
+      <ion-datetime displayFormat="hh:mm a" [(ngModel)]="openHour" placeholder="Hora de apertura" cancelText="Cancelar"
+        doneText="Hecho"></ion-datetime>
+    </ion-item>
+
+    <ion-item color="primary-accent">
+      <ion-icon name="time" slot="start"></ion-icon>
+      <ion-datetime displayFormat="hh:mm a" [(ngModel)]="closeHour" placeholder="Hora de cierre" cancelText="Cancelar"
+        doneText="Hecho"></ion-datetime>
+    </ion-item>
+
+    <div class="city" id="cityF">
+      <p>Ciudad del bar</p>
+      <ion-searchbar [animated]='true' placeholder="Ciudad" [(ngModel)]="city"></ion-searchbar>
+      <footer>
+        <ion-item id="city" *ngFor="let site of sitesList" (click)="select(site)">{{site}}
+        </ion-item>
+      </footer>
+    </div>
+  </ion-list>
+  <ion-button id="logginButton" expand="block" shape="round" (click)="newBar()">
+    Registrar
+  </ion-button>
+</ion-content>

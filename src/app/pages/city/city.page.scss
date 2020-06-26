@@ -1,0 +1,29 @@
+ion-content {
+    --background: white;
+    text-align: center;
+}
+
+ion-searchbar {
+    --background: #FF4463;
+    color: white;
+}
+
+ion-item {
+    color: black;
+    --background: white;
+}
+
+p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    text-align: justify;
+    margin-top: 4vh;
+}
+img{
+    width: 90%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}

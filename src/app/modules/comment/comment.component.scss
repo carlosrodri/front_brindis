@@ -1,0 +1,25 @@
+p {
+    color: white;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+
+ion-item {
+    --background: #023A40;
+    margin-right: 2vh;
+    margin-left: 1vh;
+    border-bottom: groove;
+    border-color: gray;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-right: 2vh;
+    border-radius: 50%;
+}

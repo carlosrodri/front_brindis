@@ -1,0 +1,39 @@
+<ion-content class="login">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <div class="back">
+    <h1 class="animated single bounceInRight delay-0.5s">Registro</h1>
+      <ion-list class="login" id="red">
+        <ion-item color="primary-accent">
+          <ion-label position="floating" class="login">Nombres</ion-label>
+          <ion-input type="email" clear-input="true" class="login" id="red" [(ngModel)]="names" color="secondary"></ion-input>
+        </ion-item>
+        <ion-item color="primary-accent">
+          <ion-label position="floating" class="login">Nickname</ion-label>
+          <ion-input type="email" clear-input="true" class="login" id="red" [(ngModel)]="nickName" color="secondary"></ion-input>
+        </ion-item>
+        <ion-item class="login" id="red" color="primary-accent">
+          <ion-label position="floating" class="login">Correo electrónico</ion-label>
+          <ion-input type="email" clear-input="true" class="login" id="red" [(ngModel)]="mail" color="secondary"></ion-input>
+        </ion-item>
+        <ion-item class="login" id="photo" color="primary-accent">
+          <ion-icon name="camera" slot="start" class="login" (click)="selectImage()"></ion-icon>
+          <img src="{{photo}}" id="camera" alt="" srcset="">
+          <ion-label class="login">Selecciona una foto</ion-label>
+        </ion-item>
+        <ion-item class="login" id="red" color="primary-accent">
+          <ion-label position="floating" class="login" id="red">Contraseña</ion-label>
+          <ion-input type="password" clear-input="true" class="login" id="red" [(ngModel)]="password" color="secondary"></ion-input>
+        </ion-item>
+        <ion-item class="login" id="red" color="primary-accent">
+          <ion-label position="floating" class="login" id="red" >Confirmar Contraseña</ion-label>
+          <ion-input type="password" clear-input="true" class="login" id="red" [(ngModel)]="confirm" color="secondary"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <ion-button id="logginButton" expand="block" shape="round" class="animated single tada delay-1s" (click)="signUp()">
+        Registrar
+        <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+      </ion-button>
+    </div>
+</ion-content>

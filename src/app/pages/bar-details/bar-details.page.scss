@@ -1,0 +1,297 @@
+ion-header {
+    display: flex;
+    background: #FF4463;
+}
+
+ion-item {
+    --background: #3E3E3E;
+    display: flex;
+    margin-right: 3vh;
+}
+
+ion-icon {
+    color: gray;
+    margin-top: 4px;
+    margin-right: 1vh;
+}
+
+#camera {
+    margin-left: 1vh;
+    font-size: 30px;
+    margin-top: 2vh;
+}
+
+#refresh {
+    color: #FF4463;
+    font-weight: bolder;
+}
+
+img {
+    width: 100%;
+}
+
+ion-content {
+    --background: white;
+    text-align: center;
+}
+
+.hour {
+    display: flex;
+}
+
+.info {
+    margin-left: 2vh;
+}
+
+#photo {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    height: 8vh;
+    width: 6vh;
+}
+
+#officeHour {
+    line-height: 0vh;
+    color: gray;
+    position: relative;
+}
+
+#title {
+    color: white;
+    font-weight: bold;
+    margin-left: 2vh;
+    text-align: justify;
+}
+
+.home {
+    display: flex;
+}
+
+.like{
+    display: flex;
+}
+
+#like{
+    margin-left: 1vh;
+    line-height: 0px;
+    color: #3880ff;
+}
+
+button{
+    border-radius: 20px;
+    color: #3880ff;
+    background: white;
+    border-color: #3880ff;
+    border: solid;
+    margin-left: 2vh;
+    height: 4vh;
+}
+
+#name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    height: 7%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: #10194e;
+    text-align: justify;
+}
+
+.description {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: black;
+    font-weight: bold;
+    text-align: justify;
+}
+
+h2 {
+    margin-left: 3vh;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #FF4463;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+// calification css
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form label {
+    font-size: 40px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: grey;
+    font-size: 30px;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    align-content: center;
+}
+
+label:hover,
+label:hover~label {
+    color: orange;
+}
+
+app-back-button {
+    position: absolute;
+    left: 1vh;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+#calification {
+    color: #bababa;
+    font-size: 20px;
+}
+
+.openHpur {
+    color: #FF4463;
+    text-align: justify;
+    margin-left: 2vh;
+}
+
+.bar {
+    color: gray;
+    text-align: justify;
+    margin-left: 2vh;
+}
+
+form {
+    text-align: center;
+}
+
+ion-label {
+    display: flex;
+}
+
+.commentClass {
+    border-top: groove;
+    border-color: gray;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+
+    /* And if you want the div to be full-width: */
+    left: 0;
+    right: 0;
+    background: #323232;
+}
+
+ion-List {
+    padding-top: 2vh;
+    padding-left: 1vh;
+    background: #323232;
+    padding-bottom: 10vh;
+}
+
+.state {
+    display: flex;
+}
+
+h3 {
+    color: #10194e;
+    margin-left: 3vh;
+}
+
+h3:hover {
+    color: #F27F1B;
+}
+
+#d {
+    font-size: 15px;
+    right: 2vh;
+    margin-top: 2.4vh;
+    width: 50%;
+    color: #FF4463;
+    font-weight: bolder;
+    border-left: groove;
+    font-family: 'Poppins', sans-serif;
+}
+
+ion-input {
+    color: #bababa;
+}
+
+ion-textarea {
+    background: white;
+    color: #010a43;
+    border-radius: 15px;
+    text-align: justify;
+    height: 8vh;
+    margin-bottom: 1.5vh;
+}
+
+ion-fab {
+    position: absolute;
+    right: 1vh;
+    bottom: 12%;
+}
+
+.comment {
+    color: white;
+    width: 50%;
+}
+
+app-status {
+    margin-left: 2vh;
+    --background: white;
+}
+
+.send {
+    color: #FF4463;
+}
+
+ion-fab-button {
+    --background: white;
+}
+
+#refresh {
+    --box-shadow: 0 4px 4px #888888;
+    --background: white;
+    color: #023A40;
+    font-family: 'Poppins', sans-serif;
+    --ripple-color:  #023A40;
+    margin-bottom: 15vh;
+}
+
+.phone{
+    color: gray;
+    margin-left: 2vh;
+    text-align: justify;
+}
+
+.openHour{
+    margin-left: 2vh;
+    font-weight: bolder;
+    color: green;
+}
+#open{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+}

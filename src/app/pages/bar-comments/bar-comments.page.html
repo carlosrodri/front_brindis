@@ -1,0 +1,24 @@
+<ion-header>
+ <app-back-button>{{rout}}</app-back-button>
+ <h1>Comentarios</h1>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <div class="title">
+    <h1>{{barName}}</h1>
+  </div>
+  <p>{{commentMessage}}</p>
+
+  <app-comment *ngFor="let comment of commentList" usermail={{comment.userMail}}
+  comment={{comment.description}} img={{comment.imageUrl}} nickname={{comment.nickname}}></app-comment>
+  
+  <div class="commentClass">
+    <ion-label>
+      <ion-textarea type="text" placeholder="Agrega tu comentario..." maxlength=500 [(ngModel)]="comment"></ion-textarea>
+      <ion-button slot="end" size="small" (click)="addComment()">Aceptar</ion-button>
+    </ion-label>
+  </div>
+
+</ion-list>
+</ion-content>

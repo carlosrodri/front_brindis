@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-title>eventos</ion-title>
+</ion-header>
+<ion-content id="content">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Actualizar estados"
+      refreshingSpinner="crescent"
+      refreshingText="Refrescando...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <h1 id="title">{{description}}</h1>
+
+  <app-event-card *ngFor="let event of eventList" idEvent={{event._id}} shop={{event.shop}} eventImg={{event.imageUrl}}
+  date={{toDate(event?.date)}} event={{event?.name}} shopImg={{event?.shopImg}} cover={{event?.cover}} description="{{event.description}}">
+</app-event-card>
+
+</ion-content>

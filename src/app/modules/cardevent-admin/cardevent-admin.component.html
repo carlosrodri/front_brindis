@@ -1,0 +1,20 @@
+<ion-card >
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <ion-card-content (click)="eventDetails()" id="card">
+    <div class="first">
+      <img src="/assets/user.png" alt="" srcset="">
+      <div class="header">
+        <h1 id="event">{{event}}</h1>
+        <p id="shop">{{shop}}</p>
+      </div>
+      <div class="h">
+        <ion-icon name="calendar"></ion-icon>
+        <p id="hour">{{date}}</p>
+      </div>
+    </div>
+  </ion-card-content>
+ <div class="options">
+   <ion-button (click)="edit()">Editar</ion-button>
+   <ion-button (click)="presentAlertConfirm()">Eliminar</ion-button>
+ </div>
+</ion-card>

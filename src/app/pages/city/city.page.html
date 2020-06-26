@@ -1,0 +1,15 @@
+<ion-content>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <div class="city">
+    <p>Por último selecciona tu ciudad de rumba. Recuerda que puedes cambiarla en cualquier momento para ver los
+      eventos, bares y eventos recomendados en aquella ciudad. Al seleccionar tu foto de perfil podrás acceder 
+       al perfil para cambiar la ubicación ¡Diviértete!
+    </p>
+    <img src="/assets/undraw_walk_in_the_city_1ma6.svg" alt="" srcset="">
+    <ion-searchbar [animated]='true' placeholder="Ciudad"></ion-searchbar>
+    <footer>
+      <ion-item id="city" *ngFor="let site of sitesList" (click)="select(site)">{{site}}
+      </ion-item>
+    </footer>
+  </div>
+</ion-content>

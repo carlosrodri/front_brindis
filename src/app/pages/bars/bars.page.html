@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bares</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Actualizar bares" refreshingSpinner="crescent"
+      refreshingText="Refrescando...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div class="search">
+    <ion-input placeholder='Buscar bares...' type="text" [(ngModel)]="barNameFilter"></ion-input>
+    <ion-icon name="search" (click)="filter()"></ion-icon>
+  </div>
+  <h1 id="title">{{description}}</h1>
+  <app-card-bar *ngFor="let shop of barList" barId={{shop._id}} name={{shop.name}} kind={{shop.barKind}}
+    city={{shop.city}} img={{shop.imageUrl}} list={{shop.qualificationList}} 
+    phoneToken={{shop.phoneToken}} hour={{shop.openHour}} closeHour={{shop.closeHour}} 
+    likeList={{shop.likeList}} working_hours={{shop.officeHours}}>
+  </app-card-bar>
+
+</ion-content>

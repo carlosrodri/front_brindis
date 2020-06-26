@@ -1,0 +1,26 @@
+<app-nav-bar></app-nav-bar>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+
+    <ion-tab-button tab="events">
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-label>Eventos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="bars">
+      <ion-icon name="beer-outline"></ion-icon>
+      <ion-label>Bares</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="hot">
+      <ion-icon name="flame-outline"></ion-icon>
+      <ion-label>Recomendado</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button tab="perfil">
+      <img src="{{perfil}}" style="width : 35px ; height : 35px">
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
