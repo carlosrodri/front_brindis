@@ -1,3 +1,4 @@
+import { EndPointsService } from './end-points.service';
 import { Utilities } from 'src/app/utilities.js/utilities';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -6,14 +7,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SitesService {
-  //URL_ALL_SHOPS = 'http://localhost:3000/api/sites'
-
-  URL_HEROKU_SITES = 'https://brindis.pro/api/sites/'
 
   constructor(private http: HttpClient,
-    private utilities: Utilities) { }
+    private utilities: Utilities, private endPoint: EndPointsService) { }
 
   getSites() {
-    return this.http.get<[]>(this.URL_HEROKU_SITES, this.utilities.getOptionsHeaders())
+    return this.http.get<[]>(this.endPoint.SITES_URL, this.utilities.getOptionsHeaders())
   }
 }

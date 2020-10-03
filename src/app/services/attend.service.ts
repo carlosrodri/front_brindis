@@ -1,3 +1,4 @@
+import { EndPointsService } from './end-points.service';
 import { Utilities } from 'src/app/utilities.js/utilities';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -8,19 +9,16 @@ import { Injectable } from '@angular/core';
 export class AttendService {
   
   constructor(private http: HttpClient,
-    private utilities: Utilities) { }
-  
-  //URi = 'http://localhost:3000/api/attends'
-  URI_HEROKU_URI = 'https://brindis.pro/api/attends/'
+    private utilities: Utilities, private endPoint: EndPointsService) { }
   
   createAttend(attend) {
-    return this.http.post(this.URI_HEROKU_URI, attend, this.utilities.getOptionsHeaders())
+    return this.http.post(this.endPoint.ATTEND_URL, attend, this.utilities.getOptionsHeaders())
   }
   
   getAttends() {
-    return this.http.get(this.URI_HEROKU_URI)
+    return this.http.get(this.endPoint.ATTEND_URL)
   }
   getAttendsByEvent(event) {
-    return this.http.get(this.URI_HEROKU_URI + '/event/' + event, this.utilities.getOptionsHeaders())
+    return this.http.get(this.endPoint.ATTEND_URL + '/event/' + event, this.utilities.getOptionsHeaders())
   }
 }

@@ -1,3 +1,4 @@
+import { EndPointsService } from './services/end-points.service';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 import { ImageService } from './services/image.service';
 import { Camera } from '@ionic-native/camera/ngx';
@@ -46,6 +47,7 @@ import { FCM } from '@ionic-native/fcm/ngx/';
     GeolocationService,
     Stripe,
     Camera,
+    EndPointsService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

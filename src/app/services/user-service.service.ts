@@ -1,3 +1,4 @@
+import { EndPointsService } from './end-points.service';
 import { Utilities } from 'src/app/utilities.js/utilities';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -8,24 +9,18 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class UserServiceService {
 
   constructor(private http: HttpClient,
-    private utilities: Utilities) { }
-
-  //urlLogin = 'http://localhost:3000/api/users/singin'
-  //urlSign = 'http://localhost:3000/api/users/'
-
-  URL_HEROKU_LOGIN = 'https://brindis.pro/api/users/singin'
-  URL_HEROKU_SIGIN = 'https://brindis.pro/api/users/'
+    private utilities: Utilities, private endPoint: EndPointsService) { }
 
   login(mail, pass) {
     let data = { mail: mail, password: pass };
-    return this.http.post(this.URL_HEROKU_LOGIN, data, this.utilities.getOptionsHeaders())
+    return this.http.post(this.endPoint.USER_LOGGIN_URL, data, this.utilities.getOptionsHeaders())
   }
 
   signUp(user) {
-    return this.http.post(this.URL_HEROKU_SIGIN, user, this.utilities.getOptionsHeaders())
+    return this.http.post(this.endPoint.USER_SIGNIN_URL, user, this.utilities.getOptionsHeaders())
   }
 
   getUserByMail(usermail: string) {
-    return this.http.get<User>(this.URL_HEROKU_SIGIN + 'mail/' +usermail, this.utilities.getOptionsHeaders())
+    return this.http.get<User>(this.endPoint.USER_SIGNIN_URL + 'mail/' +usermail, this.utilities.getOptionsHeaders())
   }
 }
